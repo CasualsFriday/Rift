@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdq5t5nmmrys3"]
+
+[ext_resource type="Script" path="res://script/Main.cs" id="1_dtoa0"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_b2dq3"]
+size = Vector2(1600, 20)
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_dtoa0")
+
+[node name="PH_floor" type="MeshInstance2D" parent="."]
+position = Vector2(800, 900)
+mesh = SubResource("QuadMesh_b2dq3")
